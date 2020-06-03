@@ -1,0 +1,35 @@
+<html>
+<head>
+	<title>Pocetna</title>
+	<link rel="stylesheet" href="stil.css">
+</head> 
+<body>
+<header><span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; navigacija</span></header>
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="oautoru.html">O autoru</a>
+  <a href="uputstvo.html">Uputstvo</a>
+
+</div>
+<div id="kontejner">
+	<form>
+		<label for="gradovi">Izaberite grad</label>
+		<select id="gradovi" name="gradovi" onchange="izg(value)">
+			<option value="beograd">Beograd</option>
+			<option value="pancevo">Pancevo</option>
+			<option value="kraljevo">Kraljevo</option>
+			<option value="kragujevac">Kragujevac</option>
+			<option value="novi-sad">Novi Sad</option>
+			<option value="leskovac">Leskovac</option>
+			<option value="vranje">Vranje</option>
+			<option value="nis">Nis</option>
+			<option value="subotica">Subotica</option>
+			<option value="sombor">Sombor</option>
+		</select>
+	</form>
+	<iframe id="ajf" src="https://naslovi.net/vremenska-prognoza/beograd"></iframe>
+</div>
+<script type="text/javascript" src="skripta.js">
+</script>
+</body>
+</html>

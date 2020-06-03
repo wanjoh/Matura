@@ -1,0 +1,36 @@
+body{background-image:url("jagod.jpg");
+color:#42aaf4;}
+
+#levo{float:left;
+position: absolute;}
+
+#desno{float:right;}
+
+#ispis{position:fixed;
+position: absolute;
+  top: 30%;
+  left: 35%;
+  width: 30%;
+  height: 30%;
+  text-align:center;
+background-color:#88d9e8;
+  }
+  
+#prvispis{
+	float:left;	
+	width:30%;
+	font-size:215%;
+}
+
+#tekstic{
+	float:left;
+	width:39%;
+	font-size:215%;
+}
+  
+#drugispis{
+	float:right;
+	width:30%;
+	font-size:215%;
+
+}

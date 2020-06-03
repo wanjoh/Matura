@@ -1,0 +1,143 @@
+<html>
+		<head>
+			<script src="jquery-3.3.1.js"></script>
+			<script>
+/*
+function Izracunaj(){
+			
+			
+		
+			var datum1=document.getElementById("dat1").value;
+			
+			var datum2=document.getElementById("dat2").value;
+			
+			var imepr=document.getElementById("ime1").value;
+			
+			var imedr=document.getElementById("ime2").value;
+			
+			if(datum1=="" || datum2=="" || imepr=="" || imedr=="") alert("Sva polja moraju biti popunjena");
+				
+			else{
+			var niz1=datum1.split("-");
+			
+			y1= parseInt(niz1[0]);
+			m1=  parseInt(niz1[1]);
+			d1=  parseInt(niz1[2]);
+			
+			
+			var niz2=datum2.split("-");
+			
+			y2= niz2[0];
+			y2= parseInt(y2);
+			m2= parseInt(niz2[1]);
+			d2= parseInt(niz2[2]);
+				
+				var d12=0;var m12=0;var y12=0;var d22=0;var m22=0;var y22=0;
+			
+				
+			if(d1>9){  d1=d1%10;
+					 d12=Math.floor(d1/10);
+					}
+					
+			if(m1>9){  m1=m1%10;
+					 m12=Math.floor(m1/10);					
+					}
+					
+			if(y1>9){ var y14=Math.floor(y1/1000); //prva
+						y1=y1%1000; //poslednja
+						var y12=Math.floor(y1/10); //skracivanje 201
+						var y11=y12%100; //pretposlednja
+						var y13=Math.floor(y12/10); //skracivanje	 20
+						y13=y13%10; //druga
+					}
+					
+					
+			if(d2>9){  d2=d2%10;
+					 d22=Math.floor(d2/10);
+					}
+					
+			if(m2>9){ m2=m2%10;
+					 m22=Math.floor(m1/10);
+					}
+					
+			if(y2>9){ 	var y24=Math.floor(y2/1000); //prva
+						y2=y2%1000; //poslednja
+						var y22=Math.floor(y2/10); //skracivanje 201
+						var y21=y22%100; //pretposlednja
+						var y23=Math.floor(y22/10); //skracivanje	 20
+						y23=y23%10; //druga
+						
+					}
+			
+			
+			var zb1=d1+m1+y1+d12+m12+y11+y13+y14;
+			var zb2=d2+m2+y2+d22+m22+y21+y23+y24;
+			
+			while(zb1>9){ var zb11=zb1%10;
+					var zb12=Math.floor(zb1/10);
+					 zb1=zb11+zb12;
+					}
+			
+			while(zb2>9){ var zb21=zb2%10;
+					var zb22=Math.floor(zb2/10);
+					 zb2=zb21+zb22;
+					}
+
+		if(zb1>zb2) {
+		var del=(zb2/zb1)*100;
+		var zaokrug = Math.floor(del);
+		var rez=zaokrug + "%";
+		document.getElementById("tekstic").innerHTML=rez;}
+		
+		else { var del2=(zb1/zb2)*100;
+		var zaokrug = Math.floor(del2);
+		var rez=zaokrug + "%";
+		document.getElementById("tekstic").innerHTML=rez;}
+		
+		document.getElementById("prvispis").innerHTML=imepr;
+		document.getElementById("drugispis").innerHTML=imedr;
+		}
+		
+		}
+		*/
+	
+
+			</script>
+<link rel="stylesheet" href="style.css">
+		</head>
+<body >
+
+	<div id="levo">
+	<form>
+	
+		Unesite ime prve osobe <br>
+		<input type="text" id="ime1"> </input> <br>
+		Unesite datum rodjenja prve osobe <br>
+		<input type="date" id="dat1"></input> <br>
+		
+		
+		
+	</form>
+	</div>	
+	
+	<div id="desno">	
+	<form>
+		Unesite ime druge osobe <br>
+		<input type="text" id="ime2"> </input> <br>
+		Unesite datum rodjenja druge osobe <br>
+		<input type="date" id="dat2"></input> <br>
+	</form>
+	</div>
+	
+	<div id="ispis" >
+		
+		<button style="margin:0 auto;" onclick="Izracunaj()">Izracunaj</button><br>
+		
+		<div id="prvispis"></div>
+		<div id="tekstic"></div>
+		<div id="drugispis"></div>
+	
+	</div>
+	
+</body>
+</html>
